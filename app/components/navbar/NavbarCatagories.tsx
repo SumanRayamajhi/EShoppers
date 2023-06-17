@@ -1,11 +1,15 @@
-import { NavCatagoriesProps } from "@/app/interfaces/interface";
 import Link from "next/link";
 import React from "react";
+import { links } from "./Nav-links";
+
+interface NavCatagoriesProps {
+  open: boolean;
+  onClickMenuButton: () => void;
+}
 
 const NavbarCatagories: React.FC<NavCatagoriesProps> = ({
   open,
-  setOpen,
-  links,
+  onClickMenuButton,
 }) => {
   return (
     <ul
@@ -18,7 +22,7 @@ const NavbarCatagories: React.FC<NavCatagoriesProps> = ({
           <Link
             href={link.to}
             className="text-teal-100 hover:bg-teal-400 px-1 duration-300 rounded-md"
-            onClick={() => setOpen(false)}
+            onClick={onClickMenuButton}
           >
             {link.name}
           </Link>

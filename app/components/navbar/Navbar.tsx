@@ -1,11 +1,10 @@
 "use client";
-import { NavbarProps } from "@/app/interfaces/interface";
 import React, { useState } from "react";
 import NavbarCatagories from "./NavbarCatagories";
 import { HiMenu, HiX, HiShoppingCart } from "react-icons/hi";
 import Link from "next/link";
 
-const Navbar: React.FC<NavbarProps> = () => {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const onClickMenuButton = () => {
@@ -13,7 +12,7 @@ const Navbar: React.FC<NavbarProps> = () => {
   };
 
   return (
-    <header className="shadow-m sticky text-teal-100 min-w-full">
+    <header className="shadow-m fixed text-teal-100 min-w-full">
       <nav className="flex md:sticky items-center justify-between py-4 md:px-10 px-7 bg-teal-600">
         <div
           onClick={onClickMenuButton}

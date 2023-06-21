@@ -11,7 +11,6 @@ describe("Navbar", () => {
   test("all given categories", () => {
     render(
       <NavbarCatagories
-        open={false}
         onClickMenuButton={function (): void {
           throw new Error("Function not implemented.");
         }}

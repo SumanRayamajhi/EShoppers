@@ -5,13 +5,13 @@ function Electronics() {
   const electronics = posts.filter((post) => post.catagories === "electronics");
   return (
     <div className="container mx-auto py-32 px-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
-      {electronics.map((electronics) => (
-        <div key={electronics.id}>
+      {electronics.map((electronic) => (
+        <div key={electronic.id}>
           <ProductCard
-            title={electronics.title}
-            image={electronics.image}
-            price={electronics.price}
-            description={electronics.desc}
+            title={electronic.title}
+            image={electronic.image}
+            price={electronic.price}
+            description={electronic.desc}
           />
         </div>
       ))}

@@ -1,3 +1,5 @@
+# EShoppers
+
 - E-commerce web app project.
 - Combined project with Nicolas who knows more about clean code and software excellence.
 - NextJs and TailwindCss for Frontend.
